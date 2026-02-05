@@ -7,7 +7,11 @@ type Props = {
 
 const WeatherIcon = ({src, className}: Props) => {
   return (
-    <img className={clsx("size-8", className)} src={`https://openweathermap.org/payload/api/media/file/${src}.png`} alt='Weather Icon' />
+    <img
+      className={clsx("size-8", className)}
+      src={`https://openweathermap.org/img/wn/${src}@2x.png`}
+      alt="Weather Icon"
+    />
   )
 }
 
